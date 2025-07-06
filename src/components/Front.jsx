@@ -1,6 +1,6 @@
 // client/src/components/Front.jsx
 import React, { useEffect } from "react";
-import "./front.css";
+import "./Front.css";
 import resumePDF from "../assets/Resume_CCN.pdf";
 
 function Front() {
