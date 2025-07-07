@@ -70,6 +70,27 @@ function App() {
     ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form", { origin: "bottom" });
     ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
     ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+    /* script.js (or wherever you configure ScrollReveal) */
+ScrollReveal({
+  reset: false,          // keep revealed elements visible
+  distance: '50px',
+  duration: 800,
+  mobile: true
+});
+
+/* Skills: reveal every box with a small interval + early trigger */
+ScrollReveal().reveal('.skills .skill-box', {
+  origin: 'bottom',
+  interval: 120,         // cascade the icons
+  viewFactor: 0.15       // fire when 15 % of card is in view
+});
+
+/* Portfolio cards */
+ScrollReveal().reveal('.portfolio .portfolio-box', {
+  origin: 'bottom',
+  interval: 150,
+  viewFactor: 0.15
+});
 
     ScrollReveal().reveal(
   '.home-img, .services-container, .skills-container, .skill-box, .portfolio-box, .contact form',
